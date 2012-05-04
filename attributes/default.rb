@@ -51,8 +51,8 @@ when 6
     "yum-utils-1.1.30-10.el6.noarch.rpm",
     "yum-plugin-fastestmirror-1.1.30-10.el6.noarch.rpm"
   ]
-  default['el2cents']['rpms2remove'] = [
-    "redhat-release",
+  default['el2centos']['rpms2remove'] = [
+    "redhat-release-server-6Server",
     "yum-rhn-plugin",
     "rhn-check",
     "rhnsd",

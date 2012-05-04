@@ -45,6 +45,7 @@ when "redhat"
     rpm_package el_rpm do
       options "--nodeps"
       action :remove
+      ignore_failure true
     end
   end
 
@@ -56,12 +57,12 @@ when "redhat"
 
 # If the process was interrupted, it may have changed our platform.
 # Try to remove any remaining redhat files, and convert to centos.
-case node['platform']
 when "linux"
   node['el2centos']['rpms2remove'].each do |el_rpm|
     rpm_package el_rpm do
       options "--nodeps"
       action :remove
+      ignore_failure true
     end
   end
 
