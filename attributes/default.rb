@@ -33,10 +33,10 @@ case node['platform_version'].to_i
 when 5
   default['el2centos']['rpm_url'] = "#{node['el2centos']['base_url']}/CentOS/"
   default['el2centos']['rpms'] = [
-    "centos-release-5-8.el5.centos.#{machine_arch}.rpm",
-    "centos-release-notes-5.8-0.#{machine_arch}.rpm",
-    "yum-3.2.22-39.el5.centos.noarch.rpm",
-    "yum-updatesd-0.9-2.el5.noarch.rpm",
+    "centos-release-5-9.el5.centos.1.#{machine_arch}.rpm",
+    "centos-release-notes-5.9-0.#{machine_arch}.rpm",
+    "yum-3.2.22-40.el5.centos.noarch.rpm",
+    "yum-updatesd-0.9-5.el5.noarch.rpm",
     "yum-fastestmirror-1.1.16-21.el5.centos.noarch.rpm"
   ]
   default['el2centos']['rpms2remove'] = [
@@ -46,10 +46,10 @@ when 5
 when 6
   default['el2centos']['rpm_url'] = "#{node['el2centos']['base_url']}/Packages/"
   default['el2centos']['rpms'] = [
-    "centos-release-6-2.el6.centos.7.#{machine_arch}.rpm",
-    "yum-3.2.29-22.el6.centos.noarch.rpm",
-    "yum-utils-1.1.30-10.el6.noarch.rpm",
-    "yum-plugin-fastestmirror-1.1.30-10.el6.noarch.rpm"
+    "centos-release-6-3.el6.centos.9.#{machine_arch}.rpm",
+    "yum-3.2.29-30.el6.centos.noarch.rpm",
+    "yum-utils-1.1.30-14.el6.noarch.rpm",
+    "yum-plugin-fastestmirror-1.1.30-14.el6.noarch.rpm"
   ]
   default['el2centos']['rpms2remove'] = [
     "redhat-release-server-6Server",

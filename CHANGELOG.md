@@ -1,3 +1,7 @@
+## v0.0.4
+
+  Update RPM urls
+
 ## v0.0.3
 
   Fix minor typos and syntax errors
