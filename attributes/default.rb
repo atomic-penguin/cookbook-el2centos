@@ -46,8 +46,8 @@ when 5
 when 6
   default['el2centos']['rpm_url'] = "#{node['el2centos']['base_url']}/Packages/"
   default['el2centos']['rpms'] = [
-    "centos-release-6-3.el6.centos.9.#{machine_arch}.rpm",
-    "yum-3.2.29-30.el6.centos.noarch.rpm",
+    "centos-release-6-4.el6.centos.10.#{machine_arch}.rpm",
+    "yum-3.2.29-40.el6.centos.noarch.rpm",
     "yum-utils-1.1.30-14.el6.noarch.rpm",
     "yum-plugin-fastestmirror-1.1.30-14.el6.noarch.rpm"
   ]
